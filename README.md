@@ -66,4 +66,49 @@ A solid portion of code is infastructure for things i didn't even have time to i
   +6, -4
 
 
-  # Algorithms
+# Algorithms
+## Main
+```
+ Creates a battleManager and teamManager instance
+ Basic input loop to manage the main menu
+  - Battle (runs battlemanager's start with the teammanager instance)
+  - Team Builder (runs teammanager's start, feeding itself the overall team list)
+  - Exit (saves teams and exits)
+```
+## BattleManager
+```
+ Checks if there are 2 teams that can be used for battle
+ Allows players to select
+ Allows players to select their starting pokemon
+ Begins the standard battle loop
+  - Get faster pokemon's input (use move OR switch mons)
+  - Get slower pokemon's input (use move OR switch mons)
+  - use the selected moves with a MoveManager instance
+  - final turn checks such as status, timers, and stun
+```
+## MoveManager
+```
+ Holds all move data, including all created moves and their secondary abilities
+ When given the two active mons and the moves used, will use the moves and apply the necessary changes
+```
+## TeamBuilder
+```
+ Allows user to access and create teams
+ Teams accessed can have their names and pokemon data changed, the team can be saved or the data can be discarded
+ Accessed pokemon can have all their data edited, such as moves, ability, item*, and EVs
+
+ All data is saved via serialization
+```
+## Move
+```
+Holds standard data for the Move datatype, such as name, damage, etc.
+```
+## Pokemon
+```
+Holds standard data for the Pokemon datatype, such as name, stats, types, etc.
+Allows for editing directly
+```
+## Team
+```
+Holds standard data for the Team datatype, such as teamName, pokemon, etc.
+```
