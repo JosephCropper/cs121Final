@@ -1,8 +1,8 @@
 # cs121Final
- Go figure, theres a lot of data in pokemon
+ Go figure, theres a lot of data in pokemon.
 Unfortunately, when i attempted to use an API, i ran into issues where there was too much data to import, and it would cut off early.
-So all of this had to be entered by hand
-Since there is... a LOT of data, consider this more a proof-of-concept rather than a fully finished pokemon sim
+So all of this had to be entered by hand.
+Since there is... a LOT of data, consider this more a proof-of-concept rather than a fully finished pokemon sim.
 A solid portion of code is infastructure for things i didn't even have time to impliment.
 
   Use the example team i managed to make data for:
